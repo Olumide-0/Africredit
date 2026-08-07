@@ -11,6 +11,11 @@
     "ios": {
       "supportsTablet": true
     },
+    "expo": {
+    "web": {
+      "bundler": "metro"
+    }
+  },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
