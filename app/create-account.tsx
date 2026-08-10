@@ -48,7 +48,7 @@ export default function CreateAccount() {
       return;
     }
 
-    alert("Account created successfully!");
+    router.push("./account-created");
   };
 
   return (
