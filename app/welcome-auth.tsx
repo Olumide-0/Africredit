@@ -1,6 +1,6 @@
-import { View, Text, Image, Pressable, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
-import welcomeImg from "../assets/images/africredit_logo-removebg-preview 1.png";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import welcomeImg from "../assets/images/africredit-logo.png";
 
 export default function WelcomeAuth() {
   const router = useRouter();
@@ -16,7 +16,10 @@ export default function WelcomeAuth() {
         <Text style={styles.tagline}>Just a smarter way to borrow</Text>
       </View>
       <View style={styles.sheet}>
-        <Pressable style={styles.signUpButton}>
+        <Pressable
+          style={styles.signUpButton}
+          onPress={() => router.push("/login")}
+        >
           <Text style={styles.signUpText}>Sign Up</Text>
         </Pressable>
         <Pressable style={styles.loginButton}>
@@ -66,7 +69,7 @@ const styles = StyleSheet.create({
   },
   sheet: {
     backgroundColor: "#ffffff",
-    borderWidth: 1,          
+    borderWidth: 1,
     borderColor: "#00000010",
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
