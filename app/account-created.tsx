@@ -24,9 +24,9 @@ export default function AccountCreated() {
       <View style={styles.buttons}>
         <Pressable
           style={styles.verifyButton}
-          onPress={() => router.push("/onboarding")}
+          onPress={() => router.push("./verify-identity")}
         >
-          <Text style={styles.verifyText}>Verify Identify</Text>
+          <Text style={styles.verifyText}>Verify Identity</Text>
         </Pressable>
 
         <Pressable
