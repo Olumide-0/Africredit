@@ -73,7 +73,7 @@ export default function SignIn() {
 
         <Pressable
           style={styles.loginButton}
-          onPress={() => router.push("/home")}
+          onPress={() => router.push("/(tabs)/home")}
         >
           <Text style={styles.loginButtonText}>Login</Text>
         </Pressable>
